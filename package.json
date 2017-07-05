@@ -12,6 +12,7 @@
     "react-scripts": "1.0.8"
   },
   "scripts": {
+    "sass": "sass --watch src/stylesheets/scss:src/stylesheets/css",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
