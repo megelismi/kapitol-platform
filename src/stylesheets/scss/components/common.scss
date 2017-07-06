@@ -1,0 +1,49 @@
+$kapitolRed: #E73347;
+$kapitolLightGray: #DFE0E2;
+
+.body{
+  font-family: Lato, sans-serif;
+}
+
+.page-mid{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%,-50%);
+  -moz-transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  -o-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+}
+
+.kapitolRed{
+  background: $kapitolRed;
+}
+
+.no-border{
+  border: none;
+}
+
+.border-light-gray{
+  border: 2px solid $kapitolLightGray;
+}
+
+select.dropdown {
+  margin: 0px;
+  margin-top: 30px;
+  height: 40px;
+  width: 150px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: $kapitolLightGray;
+  padding: 8px;
+  padding-left: 20px;
+  font-size: 16px;
+  color: #666666;
+  -webkit-appearance: none;
+  -webkit-border-radius: 0px;
+  -moz-appearance: none;
+  appearance: none;
+  background: url('../../images/dropdown.png') no-repeat 85% 55% #ffffff;
+  background-size: 11px 7px;
+}
