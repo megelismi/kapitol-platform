@@ -1,8 +1,9 @@
 @import './common';
 
 #search-box{
+  position: relative;
+  top: -2px;
   border: 1px solid $kapitolLightGray;
-  z-index: 999999;
   width: 350px;
   display: block;
   margin: 0 auto;
@@ -20,5 +21,11 @@
         background: #D8D8D8 !important;
       }
     }
+  }
+}
+
+@media screen and (max-width: 500px){
+  #search-box{
+    width: 275px !important;
   }
 }

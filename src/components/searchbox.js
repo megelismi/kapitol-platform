@@ -5,8 +5,15 @@ class SearchBox extends Component{
         return(
             <div id="search-box">
                 <ul id='search-options' className="no-padding no-margin text-left list-no-styles">
-                    <li>Paul Ryan</li>
-                    <li>Paul George</li>
+                    {this.props.searchResults.filter(word =>{
+                        if(word.includes(this.props.value)){
+                            return word;
+                        }else{
+                            //TODO the rest of the
+                        }
+                    }).map(word =>{
+                        return <li key={word}>{word}</li>
+                    })}
                 </ul>
             </div>
         )

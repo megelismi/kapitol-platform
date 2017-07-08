@@ -12,7 +12,8 @@ class App extends Component{
         this.state = {
             placeholderText: 'Enter a member name..',
             searchType: 'member',
-            inputValue: ''
+            inputValue: '',
+            searchResults: InputSearchService.fetchSearch('members')
         }
         this.setPlaceholder = this.setPlaceholder.bind(this);
         this.updateInputValue = this.updateInputValue.bind(this);
@@ -25,14 +26,19 @@ class App extends Component{
         if(target === 'members'){
             this.setState({
                 placeholderText: 'Enter a member name..',
-                searchType: target
+                searchType: target,
+                searchResults: InputSearchService.fetchSearch(target)
             })
         }else{
             this.setState({
                 placeholderText: 'Enter a keyword..',
-                searchType: target
+                searchType: target,
+                searchResults: InputSearchService.fetchSearch(target)
             })
         }
+
+        //CLEAR INPUT BAR
+        document.getElementById('search-bar').value = '';
     }
 
     //FUNCTION TO BE FIRED ON INPUT CHANGE
@@ -40,13 +46,10 @@ class App extends Component{
     //TO DO: WITHIN THIS FUNCTION, THROTTLE EVERY X SECONDS AND HIT API BACKEND FOR MEMBERS/LEGISLATION
     updateInputValue(event){
         //KEEP VARIABLE OF INPUT VALUE
-        var target = event.target.value;
-        //KEEP VARIABLE OF KEYWORD LIST
-        var keyWords = InputSearchService.fetchKeyWords();
-
-        //TODO FILTER THROUGH THE KEYWORD LIST FOR MATCHES IN INPUT VALUE
-        console.log(target);
-        console.log(keyWords);
+        var target = event.target.value.toLowerCase();
+        this.setState({
+            inputValue: target
+        })
     }
 
 
@@ -56,14 +59,14 @@ class App extends Component{
             <div id='fp-container' className="page-mid">
                 <img src={kapitol_logo} alt=""/>
                 <div id="fp-search">
-                    <input onChange={this.updateInputValue} type="text" placeholder={this.state.placeholderText} className="border-light-gray"/>
-                    <SearchBox/>
-                </div>
-                <div id="fp-selector" className="select-style">
-                    <select onChange={this.setPlaceholder} className="dropdown" name="drop-down">
-                        <option value="members">Members</option>
-                        <option value="legislation">Legislation</option>
-                    </select>
+                    <input id='search-bar' onChange={this.updateInputValue} type="text" placeholder={this.state.placeholderText} className="border-light-gray"/>
+                    {this.state.inputValue.length === 0 ? '': <SearchBox searchResults={this.state.searchResults} value={this.state.inputValue}/> }
+                    <div id="fp-selector" className="select-style">
+                        <select onChange={this.setPlaceholder} className="dropdown" name="drop-down">
+                            <option value="members">Members</option>
+                            <option value="legislation">Legislation</option>
+                        </select>
+                    </div>
                 </div>
             </div>
         )

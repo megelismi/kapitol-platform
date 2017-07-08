@@ -55,9 +55,13 @@ $kapitolLightGray: #DFE0E2;
   border: 2px solid $kapitolLightGray;
 }
 
+select{
+  z-index: 0;
+}
+
 //DROP DOWN STYLES
 select.dropdown {
-  z-index: -1;
+  z-index: inherit;
   margin: 0px;
   margin-top: 30px;
   height: 40px;
