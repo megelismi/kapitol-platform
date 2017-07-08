@@ -1,0 +1,31 @@
+@import './common';
+
+#search-box{
+  position: relative;
+  top: -2px;
+  border: 1px solid $kapitolLightGray;
+  width: 350px;
+  display: block;
+  margin: 0 auto;
+  height: auto;
+  background: white;
+  #search-options{
+    li{
+      list-style: none;
+      padding: 10px 0 10px 20px;
+      font-size: 18px;
+      //border: 2px solid black;
+      cursor: pointer;
+      background: white;
+      &:hover{
+        background: #D8D8D8 !important;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 500px){
+  #search-box{
+    width: 275px !important;
+  }
+}
