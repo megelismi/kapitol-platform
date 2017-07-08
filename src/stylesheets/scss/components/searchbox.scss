@@ -1,0 +1,24 @@
+@import './common';
+
+#search-box{
+  border: 1px solid $kapitolLightGray;
+  z-index: 999999;
+  width: 350px;
+  display: block;
+  margin: 0 auto;
+  height: auto;
+  background: white;
+  #search-options{
+    li{
+      list-style: none;
+      padding: 10px 0 10px 20px;
+      font-size: 18px;
+      //border: 2px solid black;
+      cursor: pointer;
+      background: white;
+      &:hover{
+        background: #D8D8D8 !important;
+      }
+    }
+  }
+}

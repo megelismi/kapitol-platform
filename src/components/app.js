@@ -1,5 +1,8 @@
 import React, { Component } from 'react';
+import SearchBox from './searchbox';
 import '../stylesheets/css/index.css';
+import InputSearchService from '../services/api';
+
 
 let kapitol_logo = require('../images/kapitol_logo.png');
 
@@ -32,12 +35,18 @@ class App extends Component{
         }
     }
 
+    //FUNCTION TO BE FIRED ON INPUT CHANGE
+    //CHECKS TARGET VALUE AND UPDATES INPUT VALUE STATE
+    //TO DO: WITHIN THIS FUNCTION, THROTTLE EVERY X SECONDS AND HIT API BACKEND FOR MEMBERS/LEGISLATION
     updateInputValue(event){
+        //KEEP VARIABLE OF INPUT VALUE
         var target = event.target.value;
+        //KEEP VARIABLE OF KEYWORD LIST
+        var keyWords = InputSearchService.fetchKeyWords();
+
+        //TODO FILTER THROUGH THE KEYWORD LIST FOR MATCHES IN INPUT VALUE
         console.log(target);
-        this.setState({
-            inputValue: target
-        })
+        console.log(keyWords);
     }
 
 
@@ -48,6 +57,7 @@ class App extends Component{
                 <img src={kapitol_logo} alt=""/>
                 <div id="fp-search">
                     <input onChange={this.updateInputValue} type="text" placeholder={this.state.placeholderText} className="border-light-gray"/>
+                    <SearchBox/>
                 </div>
                 <div id="fp-selector" className="select-style">
                     <select onChange={this.setPlaceholder} className="dropdown" name="drop-down">
