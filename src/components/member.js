@@ -1,10 +1,41 @@
 import React, {Component} from 'react';
+import '../stylesheets/css/index.css';
 
 class Member extends Component{
     render(){
         return(
-            <div>
-                <h1>Member Page</h1>
+            <div className="mp-container">
+                <div className="mp-details-container">
+                    <div className="mp-image">
+                        <img src="https://paulryan.house.gov/uploadedphotos/highresolution/3f3943d8-cea4-4f6b-96ac-3c25fd3ef24e.jpg" alt="Member picture"/>
+                    </div>
+                    <div className="mp-details">
+                        <h1>Paul Ryan</h1>
+                        <h3>Republican, Wisconsin 1st District</h3>
+                        <ul>
+                            <li className="mp-fb">
+                                &nbsp;&nbsp;/speakerryan
+                            </li>
+                            <li className="mp-twitter">
+                                &nbsp;&nbsp;@SpeakerRyan
+                            </li>
+                            <li className="mp-instagram">
+                                &nbsp;&nbsp;/SpeakerRyan
+                            </li>
+                        </ul>
+                        <a className="mp-bio"
+                           href="https://en.wikipedia.org/wiki/Paul_Ryan"
+                           target="_blank">
+                            Read biography&nbsp;&nbsp;
+                        </a>
+                    </div>
+                </div>
+                <div className="mp-table">
+                    member table data
+                </div>
+                <div className="mp-issues">
+                    member stance on issues
+                </div>
                 {
                     console.log(this.props.match.params.name)
                 }
