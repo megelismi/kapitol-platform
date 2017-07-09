@@ -21,7 +21,7 @@
 
 .page-mid {
   position: absolute;
-  top: 50%;
+  top: 45%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
   -moz-transform: translate(-50%, -50%);
@@ -42,6 +42,7 @@ select {
   z-index: 0; }
 
 select.dropdown {
+  cursor: pointer;
   z-index: inherit;
   margin: 0px;
   margin-top: 30px;
@@ -60,6 +61,8 @@ select.dropdown {
   appearance: none;
   background: url("../../images/dropdown.png") no-repeat 85% 55% #ffffff;
   background-size: 11px 7px; }
+  select.dropdown:hover {
+    outline: none; }
 
 #search-box {
   position: relative;
@@ -70,14 +73,17 @@ select.dropdown {
   margin: 0 auto;
   height: auto;
   background: white; }
-  #search-box #search-options li {
-    list-style: none;
-    padding: 10px 0 10px 20px;
-    font-size: 18px;
-    cursor: pointer;
-    background: white; }
-    #search-box #search-options li:hover {
-      background: #D8D8D8 !important; }
+  #search-box #search-options a {
+    color: black;
+    text-decoration: none; }
+    #search-box #search-options a li {
+      list-style: none;
+      padding: 10px 0 10px 20px;
+      font-size: 18px;
+      cursor: pointer;
+      background: white; }
+      #search-box #search-options a li:hover {
+        background: #D8D8D8 !important; }
 
 @media screen and (max-width: 500px) {
   #search-box {

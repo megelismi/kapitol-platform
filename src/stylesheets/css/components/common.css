@@ -21,7 +21,7 @@
 
 .page-mid {
   position: absolute;
-  top: 50%;
+  top: 45%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
   -moz-transform: translate(-50%, -50%);
@@ -42,6 +42,7 @@ select {
   z-index: 0; }
 
 select.dropdown {
+  cursor: pointer;
   z-index: inherit;
   margin: 0px;
   margin-top: 30px;
@@ -60,5 +61,7 @@ select.dropdown {
   appearance: none;
   background: url("../../images/dropdown.png") no-repeat 85% 55% #ffffff;
   background-size: 11px 7px; }
+  select.dropdown:hover {
+    outline: none; }
 
 /*# sourceMappingURL=common.css.map */
