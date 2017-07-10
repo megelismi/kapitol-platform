@@ -188,6 +188,18 @@ select.dropdown {
 @media screen and (max-width: 500px) {
   #search-box {
     width: 275px !important; } }
+.democrat {
+  padding: 5px 10px;
+  background-color: #007DBC; }
+
+.democrat, .republican {
+  font-weight: 500;
+  display: inline;
+  color: white;
+  width: 40px;
+  border-radius: 50%;
+  margin-right: 3px; }
+
 .mp-bio {
   color: gray; }
   .mp-bio:after {
@@ -203,7 +215,13 @@ select.dropdown {
 .mp-container {
   display: flex;
   flex-direction: column;
-  align-items: center; }
+  align-items: center;
+  font-family: 'Lato', san-serif; }
+
+.mp-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
 
 .mp-details-container, .mp-table, .mp-issues {
   margin: 20px; }
@@ -212,7 +230,7 @@ select.dropdown {
   width: 90%;
   display: flex; }
   .mp-details-container h1, .mp-details-container h3, .mp-details-container ul {
-    margin: 10px 10px 20px 0; }
+    margin: 5px 10px 20px 0; }
   .mp-details-container ul {
     list-style: none;
     padding: 0; }
@@ -220,11 +238,8 @@ select.dropdown {
       display: inline;
       padding-right: 30px; }
 
-.mp-details {
-  width: 67%; }
-
 .mp-image {
-  width: 33%; }
+  margin-right: 30px; }
 
 .mp-fb, .mp-twitter, .mp-instagram {
   color: gray; }
@@ -234,21 +249,28 @@ select.dropdown {
 .mp-fb:before {
   content: "\f09a"; }
 
-.mp-twitter:before {
-  content: "\f099"; }
+.mp-image img {
+  width: 200px; }
 
 .mp-instagram:before {
   content: "\f16d"; }
-
-.mp-image img {
-  width: 200px; }
 
 .mp-issues {
   border: 1px solid lightgray;
   width: 90%; }
 
+.mp-party-district {
+  font-weight: 300; }
+
+.mp-twitter:before {
+  content: "\f099"; }
+
 .mp-table {
   border: 1px solid lightgray;
   width: 90%; }
+
+.republican {
+  padding: 5px 12px;
+  background-color: #E73347; }
 
 /*# sourceMappingURL=index.css.map */

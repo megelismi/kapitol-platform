@@ -1,5 +1,21 @@
 $gray: gray;
 $darkgray: #4d4d4d;
+$kapitolRed: #E73347;
+$kapitolBlue: #007DBC;
+
+.democrat {
+  padding: 5px 10px;
+  background-color: $kapitolBlue;
+}
+
+.democrat, .republican {
+  font-weight: 500;
+  display: inline;
+  color: white;
+  width: 40px;
+  border-radius: 50%;
+  margin-right: 3px;
+}
 
 .mp-bio {
   color: $gray;
@@ -21,6 +37,13 @@ $darkgray: #4d4d4d;
   display: flex;
   flex-direction: column;
   align-items: center;
+  font-family: 'Lato', san-serif;
+}
+
+.mp-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .mp-details-container, .mp-table, .mp-issues {
@@ -31,7 +54,7 @@ $darkgray: #4d4d4d;
   width: 90%;
   display: flex;
   h1, h3, ul {
-    margin: 10px 10px 20px 0;
+    margin: 5px 10px 20px 0;
   }
   ul {
     list-style: none;
@@ -43,12 +66,8 @@ $darkgray: #4d4d4d;
   }
 }
 
-.mp-details {
-  width: 67%;
-}
-
 .mp-image {
-  width: 33%;
+  margin-right: 30px;
 }
 
 .mp-fb, .mp-twitter, .mp-instagram {
@@ -64,21 +83,15 @@ $darkgray: #4d4d4d;
   }
 }
 
-.mp-twitter {
-  &:before {
-    content: "\f099";
+.mp-image {
+  img {
+    width: 200px;
   }
 }
 
 .mp-instagram {
   &:before {
     content: "\f16d";
-  }
-
-}
-.mp-image {
-  img {
-    width: 200px;
   }
 }
 
@@ -87,7 +100,22 @@ $darkgray: #4d4d4d;
   width: 90%;
 }
 
+.mp-party-district {
+  font-weight: 300;
+}
+
+.mp-twitter {
+  &:before {
+    content: "\f099";
+  }
+}
+
 .mp-table {
   border: 1px solid lightgray;
   width: 90%;
+}
+
+.republican {
+  padding: 5px 12px;
+  background-color: $kapitolRed;
 }
