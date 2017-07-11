@@ -227,7 +227,7 @@ select.dropdown {
   margin: 20px; }
 
 .mp-details-container {
-  width: 90%;
+  width: 80%;
   display: flex; }
   .mp-details-container h1, .mp-details-container h3, .mp-details-container ul {
     margin: 5px 10px 20px 0; }
@@ -257,7 +257,7 @@ select.dropdown {
 
 .mp-issues {
   border: 1px solid lightgray;
-  width: 90%; }
+  width: 80%; }
 
 .mp-party-district {
   font-weight: 300; }
@@ -267,7 +267,7 @@ select.dropdown {
 
 .mp-table {
   border: 1px solid lightgray;
-  width: 90%; }
+  width: 80%; }
 
 .republican {
   padding: 5px 12px;
