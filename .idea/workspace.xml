@@ -2,37 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ba0967c0-efce-49a7-b144-45ad4621a1bd" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/favicon.ico" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/manifest.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/components/app.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/components/app.test.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/components/home.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/components/legislation.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/components/member.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/components/searchbox.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/images/dropdown.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/images/kapitol_logo.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/index.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/services/api.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/stylesheets/css/components/App.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/stylesheets/css/components/App.css.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/stylesheets/css/components/common.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/stylesheets/css/components/common.css.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/stylesheets/css/components/members.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/stylesheets/css/components/members.css.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/stylesheets/css/components/searchbox.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/stylesheets/css/components/searchbox.css.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/stylesheets/css/index.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/stylesheets/css/index.css.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/stylesheets/scss/components/App.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/stylesheets/scss/components/common.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/stylesheets/scss/components/members.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/stylesheets/scss/components/searchbox.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/stylesheets/scss/index.scss" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/package.json" afterPath="$PROJECT_DIR$/client/package.json" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -47,11 +19,11 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="package.json" pinned="false" current-in-tab="false">
+      <file leaf-file-name="package.json" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/client/package.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="378">
-              <caret line="21" column="1" lean-forward="false" selection-start-line="21" selection-start-column="1" selection-end-line="21" selection-end-column="1" />
+            <state relative-caret-position="144">
+              <caret line="8" column="26" lean-forward="false" selection-start-line="8" selection-start-column="26" selection-end-line="8" selection-end-column="26" />
               <folding />
             </state>
           </provider>
@@ -81,17 +53,27 @@
         <entry file="file://$PROJECT_DIR$/server/server.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="126">
-              <caret line="7" column="0" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+              <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="450">
-              <caret line="25" column="0" lean-forward="true" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+            <state relative-caret-position="222">
+              <caret line="15" column="10" lean-forward="false" selection-start-line="15" selection-start-column="10" selection-end-line="15" selection-end-column="10" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name=".env" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/.env">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="11" lean-forward="false" selection-start-line="0" selection-start-column="11" selection-end-line="0" selection-end-column="28" />
               <folding />
             </state>
           </provider>
@@ -111,7 +93,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/app/components/popular.js" />
         <option value="$PROJECT_DIR$/app/components/nav.js" />
         <option value="$PROJECT_DIR$/app/index.css" />
         <option value="$PROJECT_DIR$/app/components/home.js" />
@@ -157,11 +138,12 @@
         <option value="$PROJECT_DIR$/src/components/member.js" />
         <option value="$PROJECT_DIR$/public/index.html" />
         <option value="$PROJECT_DIR$/src/stylesheets/scss/components/members.scss" />
-        <option value="$PROJECT_DIR$/client/package.json" />
         <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/start-client.js" />
         <option value="$PROJECT_DIR$/server/server.js" />
         <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/.env" />
+        <option value="$PROJECT_DIR$/client/package.json" />
       </list>
     </option>
   </component>
@@ -341,12 +323,12 @@
       <workItem from="1499280461599" duration="423000" />
       <workItem from="1499281442271" duration="12856000" />
       <workItem from="1499408745606" duration="12017000" />
-      <workItem from="1499625021492" duration="14292000" />
+      <workItem from="1499625021492" duration="15248000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="79502000" />
+    <option name="totallyTimeSpent" value="80458000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -400,7 +382,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/config/webpack.config.dev.js" />
     <entry file="file://$PROJECT_DIR$/src/style.js" />
     <entry file="file://$PROJECT_DIR$/webpack.config.prod.js" />
     <entry file="file://$PROJECT_DIR$/index.js" />
@@ -591,10 +572,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/package.json">
+    <entry file="file://$PROJECT_DIR$/server/server.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="21" column="1" lean-forward="false" selection-start-line="21" selection-start-column="1" selection-end-line="21" selection-end-column="1" />
+        <state relative-caret-position="126">
+          <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -607,6 +588,14 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="222">
+          <caret line="15" column="10" lean-forward="false" selection-start-line="15" selection-start-column="10" selection-end-line="15" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/start-client.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="36">
@@ -615,18 +604,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/server/server.js">
+    <entry file="file://$PROJECT_DIR$/.env">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="7" column="0" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+        <state relative-caret-position="0">
+          <caret line="0" column="11" lean-forward="false" selection-start-line="0" selection-start-column="11" selection-end-line="0" selection-end-column="28" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
+    <entry file="file://$PROJECT_DIR$/client/package.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="25" column="0" lean-forward="true" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+        <state relative-caret-position="144">
+          <caret line="8" column="26" lean-forward="false" selection-start-line="8" selection-start-column="26" selection-end-line="8" selection-end-column="26" />
           <folding />
         </state>
       </provider>
