@@ -17,17 +17,19 @@ class SearchComponent extends Component{
         this.updateInputValue = this.updateInputValue.bind(this);
     }
 
-//FUNCTION TO BE FIRED ON SELECTOR CHANGE
-//CHECKS TARGET VALUE AND SETS PLACEHOLDER AND SEARCH TYPE STATE
+    /**
+     * FUNCTION TO BE FIRED ON SELECT CHANGE
+     * CHECKS TARGET VALUE AND SETS PLACEHOLDER AND SEARCH TYPE STATE
+     */
     setPlaceholder(event){
-        var target = event.target.value;
-        if(target === 'members'){
+        let target = event.target.value;
+        if (target === 'members') {
             this.setState({
                 placeholderText: 'Enter a member name..',
                 searchType: target,
                 searchResults: InputSearchService.fetchSearch(target)
             })
-        }else{
+        } else {
             this.setState({
                 placeholderText: 'Enter a keyword..',
                 searchType: target,
@@ -39,12 +41,14 @@ class SearchComponent extends Component{
         document.getElementById('search-bar').value = '';
     }
 
-//FUNCTION TO BE FIRED ON INPUT CHANGE
-//CHECKS TARGET VALUE AND UPDATES INPUT VALUE STATE
-//TO DO: WITHIN THIS FUNCTION, THROTTLE EVERY X SECONDS AND HIT API BACKEND FOR MEMBERS/LEGISLATION
+    /**
+     * FUNCTION TO BE FIRED ON INPUT CHANGE
+     * CHECKS TARGET VALUE AND UPDATES INPUT VALUE STATE
+     * USE THIS FUNCTION FOR ALL API VALUE CALLS
+     */
     updateInputValue(event){
         //KEEP VARIABLE OF INPUT VALUE
-        var target = event.target.value.toLowerCase();
+        let target = event.target.value.toLowerCase();
         this.setState({
             inputValue: target
         })
