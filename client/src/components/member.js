@@ -1,10 +1,17 @@
 import React, {Component} from 'react';
+import NavBar from './navbar';
 import '../stylesheets/css/index.css';
 
 class Member extends Component{
+
+    componentDidMount(){
+        document.title = "Members | Kapitol"
+    }
+
     render(){
         return(
             <div className="mp-container">
+                <NavBar/>
                 <div className="mp-details-container">
                     <div className="mp-image">
                         <img src="https://paulryan.house.gov/uploadedphotos/highresolution/3f3943d8-cea4-4f6b-96ac-3c25fd3ef24e.jpg"
@@ -38,9 +45,6 @@ class Member extends Component{
                 <div className="mp-issues">
                     member stance on issues
                 </div>
-                {
-                    console.log(this.props.match.params.name)
-                }
             </div>
         )
     }

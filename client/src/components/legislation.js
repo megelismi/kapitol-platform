@@ -1,10 +1,16 @@
 import React, {Component} from 'react';
+import NavBar from './navbar';
 
 class Legislation extends Component{
+
+    componentDidMount(){
+        document.title = "Legislation | Kapitol"
+    }
+
     render(){
         return(
             <div>
-                <h1>Legislation Page</h1>
+                <NavBar/>
                 {
                     console.log(this.props.match.params.keyword)
                 }

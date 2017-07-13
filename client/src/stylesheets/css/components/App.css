@@ -7,12 +7,12 @@
   #fp-container #fp-search {
     margin-top: 35px;
     height: 50px; }
-    #fp-container #fp-search input {
-      height: 100%;
+    #fp-container #fp-search #search-bar {
+      height: 50px;
       width: 350px;
       font-size: 16px;
       padding-left: 10px; }
-      #fp-container #fp-search input:focus {
+      #fp-container #fp-search #search-bar:focus {
         outline: none; }
     #fp-container #fp-search button {
       width: 50px;
