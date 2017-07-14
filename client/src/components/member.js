@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import NavBar from './navbar';
+import FooterComponent from './footer';
 import '../stylesheets/css/index.css';
 
 class Member extends Component{
@@ -45,6 +46,7 @@ class Member extends Component{
                 <div className="mp-issues">
                     member stance on issues
                 </div>
+                <FooterComponent/>
             </div>
         )
     }

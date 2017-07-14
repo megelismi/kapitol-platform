@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import NavBar from './navbar';
+import FooterComponent from './footer';
 
 class Legislation extends Component{
 
@@ -14,6 +15,7 @@ class Legislation extends Component{
                 {
                     console.log(this.props.match.params.keyword)
                 }
+                <FooterComponent/>
             </div>
         )
     }
