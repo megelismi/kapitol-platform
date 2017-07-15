@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
-import SearchComponent from './search'
+import SearchComponent from './search';
+import {Link} from 'react-router-dom';
 
 import kapitol_logo from '../images/kapitol_logo.png';
 
@@ -7,7 +8,7 @@ class NavBar extends Component{
   render(){
       return(
           <div className="navigation-bar">
-              <img src={kapitol_logo} alt="kapitol_logo"/>
+              <Link to="/"><img src={kapitol_logo} alt="kapitol_logo"/></Link>
               <div className="nav-search-container">
                   <SearchComponent/>
               </div>
