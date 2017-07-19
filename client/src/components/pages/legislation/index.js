@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 
 import NavBar from '../../shared/navbar';
 import FooterComponent from '../../shared/footer';
-import legislation from '../files/legislation.json';
+import legislation from '../../../files/legislation.json';
 
 class Legislation extends Component{
 
