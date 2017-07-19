@@ -1,14 +1,22 @@
 import React, {Component} from 'react';
+
+import NavBar from '../../shared/navbar';
+import FooterComponent from '../../shared/footer';
 import legislation from '../files/legislation.json';
 
 class Legislation extends Component{
+
+    componentDidMount(){
+        document.title = "Legislation | Kapitol"
+    }
+
     render(){
-        let topic = this.props.match.params.keyword;
-        let recentBills = legislation[0][topic]["recent_bills"];
-        let recentBillsKeys = Object.keys(recentBills[0]);
+        const topic = this.props.match.params.keyword;
+        const recentBills = legislation[0][topic]["recent_bills"];
+        const recentBillsKeys = Object.keys(recentBills[0]);
+
         const RecentBillList = (props) => {
-            {console.log(recentBills)}
-            let currentBillKey =  recentBillsKeys[0];
+            const currentBillKey =  recentBillsKeys[0];
             return (
                 <tr>
                     <td>{currentBillKey}</td>
@@ -16,17 +24,17 @@ class Legislation extends Component{
                     <td>{props.recentBill[currentBillKey].sponsorship_party}</td>
                     <td>{props.recentBill[currentBillKey].results.pass}</td>
                 </tr>
-            )
+            );
+        };
 
-            };
         return(
             <div>
-                <h1>115th Congressional Voting</h1>
-                <h1>{topic}</h1>
-                <p>{legislation[0][topic]["description"]}</p>
-                {
-                    console.log(recentBills)
-                }
+                <div>
+                    <NavBar/>
+                    <h1>115th Congressional Voting</h1>
+                    <h1>{topic}</h1>
+                    <p>{legislation[0][topic]["description"]}</p>
+                </div>
                 <table>
                     <tr>
                         <th>Recent Bills</th>
@@ -48,9 +56,10 @@ class Legislation extends Component{
                         })
                     }
                 </table>
-                </div>
-        )
+                <FooterComponent />
+            </div>
+        );
     }
-}
+};
 
 export default Legislation;
