@@ -29,3 +29,6 @@ yarn-error.log*
 #scss
 .sass-cache
 
+#idea
+*.idea
+
