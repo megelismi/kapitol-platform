@@ -1,4 +1,5 @@
 import * as getResults from './getResults';
+import axios from 'axios';
 
 export const fetchMember = member => dispatch => {
   if (member.name === "paul ryan") {
@@ -50,4 +51,12 @@ export const fetchMember = member => dispatch => {
         }
       ));
     }
-  }
+  };
+
+  export const fetchList = () => dispatch  => {
+    return axios.get('http://localhost:3004/member-list')
+        .then(list => {
+            dispatch(getResults.memberListReceived(list.data));
+            console.log(list);
+        })
+}
