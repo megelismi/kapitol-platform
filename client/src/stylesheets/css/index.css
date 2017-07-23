@@ -94,7 +94,8 @@ select.dropdown {
   -moz-appearance: none;
   appearance: none;
   background: url("../../images/dropdown.png") no-repeat 85% 55% #ffffff;
-  background-size: 11px 7px; }
+  background-size: 11px 7px;
+  margin-bottom: 30px; }
   select.dropdown:hover {
     outline: none; }
 
@@ -160,28 +161,36 @@ select.dropdown {
   -moz-appearance: none;
   appearance: none;
   background: url("../../images/dropdown.png") no-repeat 85% 55% #ffffff;
-  background-size: 11px 7px; }
+  background-size: 11px 7px;
+  margin-bottom: 30px; }
   select.dropdown:hover {
     outline: none; }
 
 #search-box {
+  height: auto;
+  overflow: scroll;
   position: relative;
   top: -2px;
   border: 1px solid #DFE0E2;
   width: 350px;
   display: block;
   margin: 0 auto;
-  height: auto;
   background: white; }
   #search-box #search-options a {
     color: black;
     text-decoration: none; }
     #search-box #search-options a li {
       list-style: none;
-      padding: 10px 0 10px 20px;
+      padding: 15px 0 10px 10px;
       font-size: 18px;
       cursor: pointer;
       background: white; }
+      #search-box #search-options a li .memberPhoto {
+        display: inline-block;
+        width: 50px;
+        margin-right: 10px; }
+      #search-box #search-options a li span {
+        margin: 0 3px; }
       #search-box #search-options a li:hover {
         background: #D8D8D8 !important; }
 
@@ -336,7 +345,8 @@ select.dropdown {
   -moz-appearance: none;
   appearance: none;
   background: url("../../images/dropdown.png") no-repeat 85% 55% #ffffff;
-  background-size: 11px 7px; }
+  background-size: 11px 7px;
+  margin-bottom: 30px; }
   select.dropdown:hover {
     outline: none; }
 
@@ -362,6 +372,15 @@ select.dropdown {
       width: 250px !important;
       position: absolute;
       top: 70px; }
+      .navigation-bar .nav-search-container #search-box #search-options li {
+        padding: 0;
+        margin: 0; }
+        .navigation-bar .nav-search-container #search-box #search-options li .memberPhoto {
+          margin-left: 25px; }
+        .navigation-bar .nav-search-container #search-box #search-options li span {
+          font-size: 14px; }
+        .navigation-bar .nav-search-container #search-box #search-options li .keyword {
+          padding: 20px; }
     .navigation-bar .nav-search-container #fp-selector {
       display: inline-block;
       height: 50px; }
@@ -391,6 +410,7 @@ select.dropdown {
           display: block;
           margin: 20px auto 30px; } }
 .footer {
+  z-index: -1;
   text-align: center;
   width: 100%;
   position: absolute;
