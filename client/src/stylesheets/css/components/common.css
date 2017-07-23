@@ -60,7 +60,8 @@ select.dropdown {
   -moz-appearance: none;
   appearance: none;
   background: url("../../images/dropdown.png") no-repeat 85% 55% #ffffff;
-  background-size: 11px 7px; }
+  background-size: 11px 7px;
+  margin-bottom: 30px; }
   select.dropdown:hover {
     outline: none; }
 

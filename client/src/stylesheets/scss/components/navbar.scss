@@ -25,6 +25,21 @@
       width: 250px !important;
       position: absolute;
       top: 70px;
+      #search-options{
+        li{
+          padding: 0;
+          margin: 0;
+          .memberPhoto{
+            margin-left: 25px;
+          }
+          span{
+            font-size: 14px;
+          }
+          .keyword{
+            padding: 20px;
+          }
+        }
+      }
     }
     #fp-selector{
       display: inline-block;

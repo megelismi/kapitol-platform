@@ -1,11 +1,19 @@
-module.exports = {
-    //TODO ALL RESULTS WILL BE FETCHED FROM HTTP REQUEST TO SERVER
-    fetchSearch: function (search) {
+import axios from 'axios';
+
+let dataService = {
+    fetchSearch: (search) => {
         if (search === 'members') {
-            return ['paul ryan', 'rudy guiliani', 'bernie sanders', 'andre green']
+            axios.get('http://localhost:3004/member-list')
+                .then(response => {
+                    return response.data;
+                })
         } else {
-            return ['gun control', 'gun rights', 'abortion', 'a.c.a', 'campaign reform'];
+            return ['gun control, birth control, A.C.A']
         }
     }
 }
+
+export default dataService;
+
+
 

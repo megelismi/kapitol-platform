@@ -22,7 +22,7 @@ class MemberPage extends Component {
       let member, socialMedia;
 
       if (!this.props.member) {
-          return <div/>
+          return <h1>No one here</h1>
       } else {
           member = this.props.member;
           socialMedia = this.props.member.socialMedia;
