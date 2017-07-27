@@ -58,7 +58,7 @@ class SearchComponent extends Component{
     }
 
     componentDidMount(){
-        this.props.dispatch(fetchList())
+        //..
     }
 
     render(){

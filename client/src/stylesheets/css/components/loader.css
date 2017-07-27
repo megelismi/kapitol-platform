@@ -1,0 +1,29 @@
+.loading {
+  position: fixed;
+  width: 100%;
+  /* Full width (cover the whole page) */
+  height: 100%;
+  /* Full height (cover the whole page) */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  -webkit-transition: .1s ease-in-out;
+  -moz-transition: .1s ease-in-out;
+  -ms-transition: .1s ease-in-out;
+  -o-transition: .1s ease-in-out;
+  background-color: rgba(0, 0, 0, 0.7);
+  /* Black background with opacity */
+  z-index: 9999999999;
+  /* Specify a stack order in case you're using a different order for other elements */ }
+  .loading .loading-screen {
+    border-radius: 20px;
+    background: white;
+    height: 150px;
+    width: 150px;
+    -webkit-transition: .1s ease-in-out;
+    -moz-transition: .1s ease-in-out;
+    -ms-transition: .1s ease-in-out;
+    -o-transition: .1s ease-in-out; }
+
+/*# sourceMappingURL=loader.css.map */
