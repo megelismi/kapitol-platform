@@ -27,10 +27,14 @@
       top: 70px;
       #search-options{
         li{
-          padding: 0;
-          margin: 0;
+          padding: 10px;
+          padding-right: 3px;
+          .keyword{
+            padding: 5px !important;
+            font-size: 15px;
+          }
           .memberPhoto{
-            margin-left: 25px;
+            margin: 10px 10px 5px 10px;
           }
           span{
             font-size: 14px;

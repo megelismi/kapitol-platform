@@ -22,16 +22,19 @@ class SearchBox extends Component{
                                 </li>
                             </Link>)
                     }) : this.props.searchResults.filter(word => {
-                            if(word.includes(this.props.value)){
+                            if(word.keyword.includes(this.props.value)){
                                 return word;
                             }else{
                                 return '';
                             }
                     }).map(word => {
                         return(
-                            <Link key={word} to={`/${this.props.searchType}/${word}`}>
+                            <Link key={word.keyword} to={`/${this.props.searchType}/${word}`}>
                                 <li>
-                                    <span className="keyword">{word}</span>
+                                    <span className="keyword-icon">
+                                        <img src={require('../../images/' + word.icon)} alt="keyword-icon"/>
+                                    </span>
+                                    <span className="keyword">{word.keyword}</span>
                                 </li>
                             </Link>
                         )

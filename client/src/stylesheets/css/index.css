@@ -186,6 +186,12 @@ select.dropdown {
       font-size: 18px;
       cursor: pointer;
       background: white; }
+      #search-box #search-options a li .keyword-icon img {
+        width: 25px;
+        margin: 0;
+        margin-right: 10px;
+        position: relative;
+        top: -3px; }
       #search-box #search-options a li .memberPhoto {
         display: inline-block;
         width: 50px;
@@ -374,10 +380,13 @@ select.dropdown {
       position: absolute;
       top: 70px; }
       .navigation-bar .nav-search-container #search-box #search-options li {
-        padding: 0;
-        margin: 0; }
+        padding: 10px;
+        padding-right: 3px; }
+        .navigation-bar .nav-search-container #search-box #search-options li .keyword {
+          padding: 5px !important;
+          font-size: 15px; }
         .navigation-bar .nav-search-container #search-box #search-options li .memberPhoto {
-          margin-left: 25px; }
+          margin: 10px 10px 5px 10px; }
         .navigation-bar .nav-search-container #search-box #search-options li span {
           font-size: 14px; }
         .navigation-bar .nav-search-container #search-box #search-options li .keyword {

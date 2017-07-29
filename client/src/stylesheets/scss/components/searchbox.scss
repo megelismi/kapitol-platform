@@ -15,6 +15,15 @@
       color: black;
       text-decoration: none;
       li{
+        .keyword-icon{
+          img{
+            width:25px;
+            margin: 0;
+            margin-right: 10px;
+            position: relative;
+            top: -3px;
+          }
+        }
         .memberPhoto{
           display: inline-block;
           width: 50px;

@@ -3,8 +3,7 @@ import SearchBox from './searchbox';
 import '../../stylesheets/css/index.css';
 import '../../stylesheets/css/components/App.css'
 import { connect } from 'react-redux';
-import { fetchList } from '../../actions/getRequests';
-import axios from 'axios';
+
 
 class SearchComponent extends Component{
     constructor(props){
@@ -12,8 +11,7 @@ class SearchComponent extends Component{
         this.state = {
             placeholderText: 'Enter a member name..',
             searchType: 'members',
-            inputValue: '',
-            searchResults: []
+            inputValue: ''
         }
         this.setPlaceholder = this.setPlaceholder.bind(this);
         this.updateInputValue = this.updateInputValue.bind(this);
