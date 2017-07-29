@@ -23,6 +23,7 @@ class SearchComponent extends Component{
      * FUNCTION TO BE FIRED ON SELECT CHANGE
      * CHECKS TARGET VALUE AND SETS PLACEHOLDER AND SEARCH TYPE STATE
      */
+
     setPlaceholder(event){
         this.setState({
             inputValue: []
@@ -51,10 +52,11 @@ class SearchComponent extends Component{
      */
     updateInputValue(event){
         //KEEP VARIABLE OF INPUT VALUE
-        let target = event.target.value.toLowerCase();
+        let target = event.target.value.charAt(0).toUpperCase() + event.target.value.slice(1);
         this.setState({
             inputValue: target
         })
+        console.log(target);
     }
 
     componentDidMount(){
