@@ -14,7 +14,7 @@ class SearchBox extends Component{
                         }
                     }).map(word =>{
                         return (
-                            <Link key={word.memberId} to={`/${this.props.searchType}/${word.firstName} ${word.lastName}`}>
+                            <Link key={word.memberId} to={`/${this.props.searchType}/${word.memberId}`}>
                                 <li>
                                     <img className='memberPhoto' src={'https://theunitedstates.io/images/congress/225x275/' + word.memberId + '.jpg'}  alt=""/>
                                     <span>{word.firstName}</span>
