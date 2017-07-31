@@ -24,7 +24,13 @@ class Home extends Component{
                         <div></div> :
                         <div className="loading">
                             <div className="page-mid loading-screen">
-                                <span></span>
+                                <div className="page-mid loading-icon">
+                                    <span className="flag-star">&#9733;</span>
+                                    <span className="flag-star">&#9733;</span>
+                                    <span className="flag-star">&#9733;</span>
+                                    <div className="flag-bar">&nbsp;</div>
+                                    <div className="flag-bar">&nbsp;</div>
+                                </div>
                             </div>
                         </div>
                 }
