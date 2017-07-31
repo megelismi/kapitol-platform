@@ -11,7 +11,7 @@ import "../../../stylesheets/css/index.css";
 class MemberPage extends Component {
 
   componentWillMount() {
-      this.props.dispatch(getRequests.fetchMember(this.props.match.params));
+      this.props.dispatch(getRequests.fetchMember(this.props.match.params.id));
   }
 
   componentDidMount() {
@@ -20,9 +20,18 @@ class MemberPage extends Component {
 
   render() {
       let member, socialMedia;
+      {
+          console.log(this.props.member);
+      }
 
       if (!this.props.member) {
-          return <h1>No one here</h1>
+          return (
+              <div className="loading">
+                  <div className="page-mid loading-screen">
+                      <span></span>
+                  </div>
+              </div>
+          )
       } else {
           member = this.props.member;
           socialMedia = this.props.member.socialMedia;
@@ -30,6 +39,7 @@ class MemberPage extends Component {
               <div className="mp-container">
                   <NavBar/>
                   <MemberDetails
+                      /*
                       picture={member.picture}
                       name={sharedHelpers.capitalize(member.name)}
                       partyStateDistrict={memberHelpers.getPartyStateDistrict(member)}
@@ -40,6 +50,7 @@ class MemberPage extends Component {
                       instagramLink={socialMedia.instagram.link}
                       instagramUsername={socialMedia.instagram.username}
                       bio={member.bio}
+                      */
                   />
                   <div className="mp-table">
                       member table data

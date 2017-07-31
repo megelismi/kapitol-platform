@@ -9,7 +9,7 @@ class App extends Component{
         return(
             <Switch>
                 <Route exact path="/" component={Home}/>
-                <Route path = '/members/:name' component={Member}/>
+                <Route path = '/members/:id' component={Member}/>
                 <Route path = '/legislation/:keyword' component={Legislation}/>
             </Switch>
         )
