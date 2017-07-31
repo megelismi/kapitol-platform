@@ -2,7 +2,19 @@ import * as getActions from '../actions/getResults';
 
 const initialState = {
     memberListReceived: [],
-    keywordListReceived: ['gun control', 'birth control', 'a.c.c']
+    keywordListReceived: [{
+        keyword: 'Gun control',
+        icon: 'gun-control-icon.png'
+    },{
+        keyword: 'Birth control',
+        icon: 'birth-control-icon.png'
+    },{
+        keyword: 'A.C.A',
+        icon: 'aca-icon.png'
+    },{
+        keyword: 'Gun rights',
+        icon: 'gun-rights-icon.png'
+    }]
 }
 
 const homeReducer = (state = initialState, action) => {
