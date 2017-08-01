@@ -2,13 +2,11 @@
 
 import express from 'express';
 import bodyParser from 'body-parser';
-import mongoose from 'mongoose';
-import config from './config';
 import members from './routes/member-route';
 import legislation from './routes/legislation-route';
 import home from './routes/home-route';
 
-const app = express();
+let app = express();
 
 //Allow all requests from all domains & localhost
 app.all('/*', (req, res, next) => {

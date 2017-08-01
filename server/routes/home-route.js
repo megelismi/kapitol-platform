@@ -3,6 +3,7 @@ import mongoose from 'mongoose';
 import config from '../config';
 import House from '../models/House';
 import Senate from '../models/Senate';
+import socketHandler from '../handlers/socketHandler';
 
 let homeRouter = express.Router();
 
@@ -29,6 +30,16 @@ homeRouter.get('/member-list', (req,res) => {
                     res.json(results);
                 })
         })
+})
+
+homeRouter.get('/emit-test', (req,res) => {
+
+    let socketServer = new socketHandler(process.env.KAPITOL_TINMAN_PORT); //TO BE SET AS WHATEVER SERVER
+
+    socketServer.emitTest({
+        firstName: 'Bernard',
+        lastName: 'Sanders'
+    });
 })
 
 
