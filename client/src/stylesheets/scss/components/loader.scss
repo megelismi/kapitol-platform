@@ -1,4 +1,12 @@
+@import 'common';
+
 // LOADER COMPONENT STYLINGS
+
+/* animation code */
+@keyframes width-loader {
+  from {width: 0}
+  to {width: 100px}
+}
 
 .loading {
   position: fixed;
@@ -23,5 +31,27 @@
     -moz-transition:  .1s ease-in-out;
     -ms-transition: .1s ease-in-out;
     -o-transition: .1s ease-in-out;
+    .loading-icon{
+      margin-top: 5px;
+      //border: 1px solid black;
+      .flag-star{
+        //border: 1px solid black;
+        font-size: 20px;
+        color: $kapitolRed;
+        margin: 0 5px;
+      }
+      .flag-bar{
+        height: 15px;
+        width: 75px;
+        background: $kapitolRed;
+        margin: 9px 0;
+        animation-name: width-loader;
+        -webkit-animation-duration: 1.5s;
+        -moz-animation-duration: 1.5s;
+        -o-animation-duration: 1.5s;
+        animation-duration: 1.5s;
+        animation-iteration-count: infinite;
+      }
+    }
   }
 }
