@@ -20,15 +20,12 @@ class MemberPage extends Component {
 
   render() {
       let member, socialMedia;
-      {
-          console.log(this.props.member);
-      }
 
       if (!this.props.member) {
           return (
               <div className="loading">
                   <div className="page-mid loading-screen">
-                      <span></span>
+                      <span/>
                   </div>
               </div>
           )
@@ -39,7 +36,6 @@ class MemberPage extends Component {
               <div className="mp-container">
                   <NavBar/>
                   <MemberDetails
-                      /*
                       picture={member.picture}
                       name={sharedHelpers.capitalize(member.name)}
                       partyStateDistrict={memberHelpers.getPartyStateDistrict(member)}
@@ -50,7 +46,6 @@ class MemberPage extends Component {
                       instagramLink={socialMedia.instagram.link}
                       instagramUsername={socialMedia.instagram.username}
                       bio={member.bio}
-                      */
                   />
                   <div className="mp-table">
                       member table data
